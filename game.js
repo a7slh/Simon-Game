@@ -13,6 +13,13 @@ $(document).keydown(function () {
   }
 });
 
+$(document).click(function () {
+  if (started === false) {
+    nextSequence();
+    started = true;
+  }
+});
+
 let buttonColors = ["red", "blue", "green", "yellow"];
 
 function nextSequence() {
